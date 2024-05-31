@@ -1,0 +1,1 @@
+$$\sum\limits_{k=0}^{\infty} \frac{f^{(k)}(0)}{k!}x^{k} \ \  \overset{\triangle}{=} \ \ f(x)的\textcolor{orange}{\underline{\textbf{Maclaurin级数}}}$$

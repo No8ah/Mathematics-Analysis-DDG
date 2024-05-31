@@ -1,0 +1,1 @@
+$$\sum\limits_{k=0}^{\infty} \frac{f^{(k)}(x_{0})}{k!}(x-x_{0})^{k}  \ \  \overset{\triangle}{=} \ \ f(x)在x_{0}的\textcolor{orange}{\underline{\textbf{Taylor级数}}}$$

@@ -1,0 +1,1 @@
+$$R_{n}(x)= \frac{1}{(n+1)!}f^{(n+1)}(\xi)x^{n+1}  \ \  \overset{\triangle}{=} \ \ 余项的\textcolor{orange}{\underline{\textbf{Lagrange形式}}} \quad \xi \in (0,x)$$

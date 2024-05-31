@@ -1,0 +1,1 @@
+$$R_{n}(x)= \frac{1}{n!}f^{(n+1)}(\theta x)(1- \theta)^{n}x^{n+1}  \ \  \overset{\triangle}{=} \ \ 余项的\textcolor{orange}{\underline{\textbf{Cauchy形式}}} \quad \theta \in (0,1)$$
