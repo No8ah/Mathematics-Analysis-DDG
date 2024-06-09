@@ -1,0 +1,1 @@
+$$f(x) \ \ \sim \ \ \frac{a_{0}}{2}+ \sum\limits_{n=1}^{\infty}(a_{n}\cos \frac{n \pi}{l}x+b_{n}\sin \frac{n \pi}{l}x) \ \  \overset{\triangle}{=} \ \ 周期为\textcolor{orange}{\underline{\textbf{2l}}}的函数f(x)的Flourier级数$$ 

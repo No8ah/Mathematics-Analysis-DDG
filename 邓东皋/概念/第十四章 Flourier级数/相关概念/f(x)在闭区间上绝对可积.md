@@ -1,0 +1,1 @@
+$$\int^{\pi}_{-\pi}|f(x)|dx <+ \infty  \ \  \overset{\triangle}{=} \ \ f(x)在[-\pi,\pi]上\textcolor{orange}{\underline{\textbf{绝对可积}}}$$

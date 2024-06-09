@@ -1,0 +1,1 @@
+$$\frac{a_{0}}{2}+\sum\limits_{n=1}^{\infty}(a_{n}\cos nx + b_{n} \sin nx)  \ \  \overset{\triangle}{=} \ \ 由a_{n}、b_{n}决定的\textcolor{orange}{\underline{\textbf{Flourier级数}}}$$
