@@ -56,25 +56,89 @@
 # 四、$Flourier$级数的平均收敛性质
 
 1. 定义(  [[平方可积]]  )
+	- $\int^{\pi}_{-\pi}|f(x)|^{2}dx \textcolor{orange}{\underline{\textbf{存在}}}$
 2. 断言(  $f在[-\pi,\pi]上\textcolor{orange}{\underline{\textbf{平方可积}}}\quad \Rightarrow \quad f在[-\pi,\pi]上\textcolor{red}{\underline{\textbf{绝对可积}}}$  )
 	1. 断言(  $2个条件\quad \Rightarrow \quad f(x) \sim \frac{a_{0}}{2}+ \sum\limits_{n=1}^{\infty}(a_{n}\cos nx +b_{n} \sin nx)$  )
 		- **2个条件**
 			1. $f以2\pi为\textcolor{orange}{\underline{\textbf{周期}}}$
 			2. $f在[-\pi,\pi]上\textcolor{orange}{\underline{\textbf{平方可积}}}$
-1. 性质(  平方可积  )
-	1. $f,g在[-\pi,\pi]上\textcolor{orange}{\underline{\textbf{平方可积}}}\quad \Rightarrow \quad fg在[-\pi,\pi]上\textcolor{orange}{\underline{\textbf{可积}}}+结论$
+
+> [!error]+ **衔接**
+> $$为了回答\lim\limits_{n \rightarrow \infty}(\frac{1}{2 \pi}\int^{\pi}_{-\pi}|f(x)-S_{n}(x)|^{2}dx)^{\frac{1}{2}}=0 是否成立?$$
+> $$\quad \Downarrow \quad $$
+> $$\textcolor{orange}{\underline{\textbf{平方可积}}}的\textcolor{pink}{\underline{\textbf{2条性质}}}$$
+
+
+1. [[平方可积]]的性质
+	1. **性质1**(  $f(x)\ , \ g(x)在[-\pi,\pi]上\textcolor{orange}{\underline{\textbf{平方可积}}}\quad \Rightarrow \quad f(x)g(x)在[-\pi,\pi]上\textcolor{orange}{\underline{\textbf{可积}}}+结论$  )
 		- **结论**
-			- $|\int^{\pi}_{- \pi}fgdx| \ \ \leq \ \  \int^{\pi}_{-\pi}|fg|dx \ \ \leq \ \  (\int^{\pi}_{-\pi}|f|^{2}dx)^{\frac{1}{2}}(\int^{\pi}_{-\pi}|g|^{2}dx)^{\frac{1}{2}}$
+			- $|\int^{\pi}_{- \pi}f(x)g(x)dx| \ \ \leq \ \  \int^{\pi}_{-\pi}|f(x)g(x)|dx \ \ \leq \ \  (\int^{\pi}_{-\pi}|f(x)|^{2}dx)^{\frac{1}{2}}(\int^{\pi}_{-\pi}|g(x)|^{2}dx)^{\frac{1}{2}}$
 			- $Cauchy-Schwarz不等式$
-	2. $f,g在[-\pi,\pi]上\textcolor{orange}{\underline{\textbf{平方可积}}}\quad \Rightarrow \quad f+g在[-\pi,\pi]上\textcolor{orange}{\underline{\textbf{平方可积}}}+结论$
+	3. **性质2**(  $f(x)\ , \ g(x)在[-\pi,\pi]上\textcolor{orange}{\underline{\textbf{平方可积}}}\quad \Rightarrow \quad f(x)+g(x)在[-\pi,\pi]上\textcolor{orange}{\underline{\textbf{可积}}}+结论$  )
 		- **结论**
-			- $(\int^{\pi}_{-\pi}|f+g|^{2}dx)^{\frac{1}{2}} \ \ \leq \ \ (\int^{\pi}_{-\pi}|f|^{2}dx)^{\frac{1}{2}} + (\int^{\pi}_{-\pi}|g|^{2})^{\frac{1}{2}}$
-1. 定义(  [[n阶三角多项式]]  )
+			- $(\int^{\pi}_{-\pi}|f(x)+g(x)|^{2}dx)^{\frac{1}{2}} \ \ \leq \ \ (\int^{\pi}_{-\pi}|f(x)|^{2}dx)^{\frac{1}{2}} + (\int^{\pi}_{-\pi}|g(x)|^{2})^{\frac{1}{2}}$
+3. 定义(  [[n阶三角多项式]]  )
 	- $T_{n}(x)=\frac{\alpha_{0}}{2}+\sum\limits_{k=1}^{n}(\alpha_{k}\cos kx + \beta_{k} \sin kx)$
 		- $\alpha_{0}\ , \ \alpha_{k}\ , \ \beta_{k}(k=1\ , \ 2\ , \ \cdots \ , \ n)为\textcolor{pink}{\underline{\textbf{常数}}}$
-1. 定理14.8
-2. 定理14.9(  $Bessel不等式$  )
-3. 引理1
-4. 定理14.10
-5. 定理14.11
-	1. 推论1(  $Paseval等式$  )
+
+>[!error] **衔接**
+> $$我们利用T_{n}(x)\textcolor{orange}{\underline{\textbf{逼近}}}f(x)$$
+> $$\quad \Downarrow \quad $$
+> $$如何使\textcolor{pink}{\underline{\textbf{误差}}}\textcolor{orange}{\underline{\textbf{最小}}}?$$
+> $$\quad \Updownarrow \quad$$
+> $$\textcolor{orange}{\underline{\textbf{均方误差}}}\triangle_{n}=(\frac{1}{2 \pi}\int^{\pi}_{- \pi}|f(x)-T_{n}(x)|^{2}dx)^{\frac{1}{2}}何时最小?$$
+> $$\quad \Updownarrow \quad$$
+> $$\alpha_{0}\ , \ \alpha_{k} \ , \ \beta_{k}(k=1\ , \ 2\ , \ \cdots \ , \ n)\textcolor{pink}{\underline{\textbf{怎么取}}}\quad S.t. \quad \triangle_{n}\textcolor{red}{\underline{\textbf{最小}}}?$$
+
+
+1. 定理14.8(  $2个条件\quad \Rightarrow \quad 1个结论$  )
+	- **2个条件**
+		1. $f(x)以2\pi为\textcolor{pink}{\underline{\textbf{周期}}}$
+		2. $f(x)在[-\pi,\pi]上\textcolor{orange}{\underline{\textbf{平方可积}}}$
+	- **1个结论**
+		1. $all\ of \  \textcolor{orange}{\underline{\textbf{n阶三角多项式}}}T_{n}(x)中 \ , \ T_{n}(x)取f(x)的\textcolor{orange}{\underline{\textbf{Flourier级数}}}的\textcolor{orange}{\underline{\textbf{n阶部分和}}}S_{n}(x)时\ , \ f(x)与T_{n}(x)的\textcolor{orange}{\underline{\textbf{均方误差}}}\textcolor{red}{\underline{\textbf{最小}}}$
+
+>[!error]+ **衔接**
+>$$于是: \quad 只要T_{n}(x)取f(x)的\textcolor{pink}{\underline{\textbf{Flourier级数}}}的\textcolor{orange}{\underline{\textbf{n阶部分和}}}S_{n}(x)时 \ , \ \triangle_{n}\textcolor{red}{\underline{\textbf{最小}}}$$
+>$$\quad \Updownarrow \quad$$
+>$$\alpha_{k}=a_{k} \quad k=0 \ , \ 1\ , \ \cdots \ , \ n$$
+>$$\beta_{k}=b_{k} \quad k=1\ , \ 2\ , \ \cdots \ , \ n$$
+1. 定理14.9(  $2个条件\quad \Rightarrow \quad f(x)的Flourier系数a_{k}\ , \ b_{k}满足结论$  )
+	- **2个条件**
+		1. $f(x)以2\pi为\textcolor{pink}{\underline{\textbf{周期}}}$
+		2. $f(x)在[-\pi,\pi]上\textcolor{orange}{\underline{\textbf{平方可积}}}$
+	- **结论**
+		- $\frac{a_{0}^{2}}{2}+\sum\limits_{k=1}^{\infty}(a^{2}_{k}+b^{2}_{k}) \leq \frac{1}{\pi}\int^{\pi}_{-\pi}|f(x)|^{2}dx$
+
+> [!error]+ **衔接**
+> $$到底什么时候\lim\limits_{n \rightarrow \infty}(\frac{1}{2 \pi}\int^{\pi}_{-\pi}|f(x)-S_{n}(x)|^{2}dx)^{\frac{1}{2}}=0 才成立呢?$$
+> $$\quad \Downarrow \quad $$
+> $$利用上面进行分析并且回答该问题$$
+1. 引理1(  $1个条件 \quad \Rightarrow \quad 2个结论$  )
+	- **1个条件**
+		1. $f(x) \in \mathbb{R}[a,b]$
+	- **2个结论**
+		1. $\forall \ \xi>0 \ , \ \exists \ \textcolor{orange}{\underline{\textbf{连续函数}}}g(x)(x \in [a,b]) \quad S.t. \quad \int^{b}_{a}|f(x)-g(x)|^{2}dx <\xi$
+		2. $g(a)=f(a) \quad 且 \quad g(b)=f(b)$
+2. 定理14.10(  $2个条件\quad \Rightarrow \quad 1个结论$  )
+	- **2个条件**
+		1. $f(x)以2 \pi为\textcolor{pink}{\underline{\textbf{周期}}}$
+		2. $f(x)在[-\pi,\pi]上\textcolor{orange}{\underline{\textbf{平方可积}}}$
+	- **1个结论**
+		1. $\forall \ \xi>0 \ , \ \exists \ \textcolor{orange}{\underline{\textbf{三角多项式}}}T(x) \quad S.t. \quad (\frac{1}{2\pi}\int^{\pi}_{-\pi}|f(x)-T(x)|)^{\frac{1}{2}}<\xi$
+3. 定理14.11(  $2个条件\quad \Rightarrow \quad 1个结论$  )
+	- **2个条件**
+		1. $f(x)以2 \pi为\textcolor{pink}{\underline{\textbf{周期}}}$
+		2. $f(x)在[-\pi,\pi]上\textcolor{orange}{\underline{\textbf{平方可积}}}$
+	- **1个结论**
+		1. $S_{n}(x)在[-\pi,\pi]上\textcolor{orange}{\underline{\textbf{平均收敛}}}到f(x)$
+			- $即 \quad \lim\limits_{n \rightarrow \infty}(\frac{1}{2\pi}\int^{\pi}_{-\pi}|f(x)-S_{n}(x)|^{2}dx)^{\frac{1}{2}}=0$
+				- $S_{n}(x)  \ \  \overset{\triangle}{=} \ \ f(x)的\textcolor{orange}{\underline{\textbf{Flourier级数}}}的\textcolor{orange}{\underline{\textbf{部分和}}}$
+	- **推论**
+		- $\frac{a_{0}^{2}}{2}+\sum\limits_{k=1}^{\infty}(a^{2}_{k}+b^{2}_{k})=\frac{1}{\pi}\int^{\pi}_{-\pi}|f(x)|^{2}dx$
+			- $Paseval等式$
+
+>[!attention]+ **总结**
+>$$\textcolor{orange}{\underline{\textbf{定理14.11}}}回答了上述问题$$
+>$$\quad \Updownarrow \quad$$
+>$$\lim\limits_{n \rightarrow \infty}(\frac{1}{2 \pi}\int^{\pi}_{-\pi}|f(x)-S_{n}(x)|^{2}dx)^{\frac{1}{2}}=0 \quad when \quad \textcolor{orange}{\underline{\textbf{定理14.11}}}成立$$
