@@ -142,7 +142,7 @@
 	- $\textcolor{orange}{\underline{\textbf{Riemann局部化}}}定理$
 	- **解释**
 		- $只需: \qquad 满足2个条件$
-		- $那么: \qquad 研究f(x)的 \textcolor{orange}{\underline{\textbf{Flourier级数}}}在x_{0}点处的\textcolor{orange}{\underline{\textbf{收敛性}}}$
+		- $那么: \qquad 要研究f(x)的 \textcolor{orange}{\underline{\textbf{Flourier级数}}}在x_{0}点处的\textcolor{orange}{\underline{\textbf{收敛性}}}$
 		- $只需:\qquad 研究f(x)在\mathring{U}(x_{0} \ , \ \delta)的性质即可$
 		- $也就是说:\qquad \textcolor{orange}{\underline{\textbf{无需}}}研究 \mathbb{R}\backslash \mathring{U}(x_{0},\delta)$
 	- **2个条件**
@@ -158,6 +158,7 @@
 >$$\textcolor{pink}{\underline{\textbf{定理14.3}}}$$
 
 1. 定理14.3(  $1个条件 \quad \Rightarrow \quad \lim\limits_{n \rightarrow + \infty}S_{n}(f;x_{0})=S$  )
+	- $\textcolor{orange}{\underline{\textbf{Dini}}}判别法$
 	- **2个先决条件**
 		1. $f(x)以2 \pi 为\textcolor{pink}{\underline{\textbf{周期}}}$
 		2. $f(x)在[- \pi\ , \ \pi]上\textcolor{orange}{\underline{\textbf{绝对可积}}}$
@@ -165,6 +166,43 @@
 		1. $\exists \ \delta > 0 \quad S.t. \quad \int^{\delta}_{0} \frac{|\varphi_{x_{0}(t)|}}{t}dt \textcolor{orange}{\underline{\textbf{存在}}}$
 	- **其中**
 		- $\varphi_{x_{0}}(t)=f(x_{0}+t)+f(x_{0}-t)-2S$
+
+1. 定理14.4(  $1个条件\quad \Rightarrow \quad f(x)的\textcolor{orange}{\underline{\textbf{Flourier级数}}}在x_{0}\textcolor{orange}{\underline{\textbf{收敛}}}到f(x_{0})$  )
+	- **2个先决条件**
+		1. $f(x)以2 \pi为\textcolor{pink}{\underline{\textbf{周期}}}$
+		2. $f(x)在[-\pi,\pi]上\textcolor{orange}{\underline{\textbf{绝对可积}}}$
+	- **1个条件**
+		1. $f(x)在x_{0}点处满足\alpha(\alpha>0)阶的\textcolor{orange}{\underline{\textbf{Lipschitz}}}条件$
+			- $\exists \ \delta>0与\textcolor{orange}{\underline{\textbf{常数}}}M \quad S.t. \quad |f(x_{0}\pm t)-f(x_{0})|\leq Mt^{\alpha}\quad (0< t  \leq \delta)$
+	- **推论**
+		- **解释**
+			- $只需:\qquad 证明f^{'}_{+}(x_{0})、f^{'}_{-}(x_{0})\textcolor{orange}{\underline{\textbf{存在}}}$
+			- $那么: \qquad 就能知道f(x)的\textcolor{orange}{\underline{\textbf{Flourier级数}}}在x_{0}点处是否\textcolor{orange}{\underline{\textbf{收敛}}}到f(x_{0})$
+		- **1个条件**
+			1. $f^{'}_{+}(x_{0})、f^{'}_{-}(x_{0})\textcolor{orange}{\underline{\textbf{存在}}}$
+		- $f(x)的\textcolor{orange}{\underline{\textbf{Flourier级数}}}在x_{0}点处\textcolor{orange}{\underline{\textbf{收敛}}}到f(x_{0})$
+	- **小推论**
+
+>[!error]- **衔接**
+>$$接下来\qquad 我们引入\textcolor{orange}{\underline{\textbf{逐段可微}}}的概念$$
+
+
+1. 定义(  [[f(x)在闭区间上逐段可微]]  )
+
+>[!error]- **衔接**
+>$$综合以上讨论\qquad 我们得到$$
+
+1. 定理14.5(  $2个条件 \quad \Rightarrow \quad 2个结论$  )
+	- **2个条件**
+		1. $f(x)以2 \pi为\textcolor{pink}{\underline{\textbf{周期}}}$
+		2. $f(x)在[-\pi,\pi]上\textcolor{orange}{\underline{\textbf{逐段可微}}}$
+	- **2个结论**
+		1. $f(x)的\textcolor{orange}{\underline{\textbf{Flourier级数}}}在f(x)的\textcolor{orange}{\underline{\textbf{连续点}}}处\textcolor{orange}{\underline{\textbf{收敛}}}到f(x)$
+		2. $f(x)的\textcolor{orange}{\underline{\textbf{Flourier级数}}}在f(x)的\textcolor{orange}{\underline{\textbf{不连续点}}}处\textcolor{orange}{\underline{\textbf{收敛}}}到 \frac{f(x+0)+f(x-0)}{2}$
+	- **其中**
+		- $\textcolor{orange}{\underline{\textbf{不连续点}}} \rightarrow \textcolor{pink}{\underline{\textbf{第一类间断点}}}/\textcolor{pink}{\underline{\textbf{可去间断点}}}$
+			- $\textcolor{pink}{\underline{\textbf{第一类间断点}}}:\quad \textcolor{orange}{\underline{\textbf{左右极限}}}\textcolor{pink}{\underline{\textbf{存在}}}但\textcolor{orange}{\underline{\textbf{不相等}}}$
+			- $\textcolor{pink}{\underline{\textbf{可去间断点}}}:\quad \textcolor{orange}{\underline{\textbf{左右极限}}}\textcolor{pink}{\underline{\textbf{存在}}}且\textcolor{orange}{\underline{\textbf{相等}}}$
 # 三、任意区间上的$Flourier$级数
 
 1. 定义(  [[周期为2l的函数f(x)的Flourier级数]]  )
