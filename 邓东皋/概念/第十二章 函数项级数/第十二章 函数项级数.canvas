@@ -1,0 +1,19 @@
+{
+	"nodes":[
+		{"id":"39c948871dd87855","x":-160,"y":-130,"width":250,"height":60,"type":"text","text":"函数序列"},
+		{"id":"365acb606f92e6e2","x":-160,"y":-280,"width":250,"height":60,"type":"text","text":"和函数"},
+		{"id":"0e3c87c6ad2484d2","type":"text","text":"函数项级数","x":-160,"y":0,"width":250,"height":60},
+		{"id":"0ec8301c20568ed5","type":"text","text":"极限函数","x":160,"y":-280,"width":250,"height":60},
+		{"id":"2c12d13c5612a497","type":"text","text":"函数序列","x":160,"y":-130,"width":250,"height":60},
+		{"id":"4be8ab3f5460afd8","x":160,"y":160,"width":250,"height":60,"type":"text","text":"$\\S1$"},
+		{"id":"f6890c82800f20a4","type":"text","text":"$\\S2 + \\S3$","x":-160,"y":160,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"54f87c7c9e374315","fromNode":"39c948871dd87855","fromSide":"top","toNode":"365acb606f92e6e2","toSide":"bottom"},
+		{"id":"baa411e097ae9a95","fromNode":"0e3c87c6ad2484d2","fromSide":"top","toNode":"39c948871dd87855","toSide":"bottom"},
+		{"id":"0ae4f565452b8d88","fromNode":"2c12d13c5612a497","fromSide":"top","toNode":"0ec8301c20568ed5","toSide":"bottom"},
+		{"id":"1a99e06d7ecb4804","fromNode":"f6890c82800f20a4","fromSide":"top","toNode":"0e3c87c6ad2484d2","toSide":"bottom"},
+		{"id":"8f11200ca41ed031","fromNode":"4be8ab3f5460afd8","fromSide":"top","toNode":"2c12d13c5612a497","toSide":"bottom"},
+		{"id":"891d586febc9c46c","fromNode":"0e3c87c6ad2484d2","fromSide":"left","toNode":"365acb606f92e6e2","toSide":"left"}
+	]
+}
