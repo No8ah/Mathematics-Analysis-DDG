@@ -6,4 +6,6 @@ $$\begin{eqnarray}
 &④& \quad \lim\limits_{t \rightarrow 0^{+}} \frac{f(x_{i}+t)-f(x_{i}+0)}{t}\textcolor{orange}{\underline{\textbf{存在}}}\\
 &⑤& \quad \lim\limits_{t  \rightarrow 0^{-}} \frac{f(x_{i}+t)-f(x_{i}-0)}{t}\textcolor{orange}{\underline{\textbf{存在}}}
 \end{eqnarray}$$
+
 $$ Def: \quad f(x)在[a,b]上\textcolor{orange}{\underline{\textbf{逐段可微}}}$$
+
