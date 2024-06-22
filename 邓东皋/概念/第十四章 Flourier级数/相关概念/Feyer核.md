@@ -1,0 +1,2 @@
+$$K_{n}(t) = \frac{1}{(n+1)} \cdot \sum\limits_{k=0}^{\infty} \frac{\sin\left(k+ \frac{1}{2}\right)t}{2\sin \frac{t}{2}} $$
+$$K_{n}(t)  \ \  \overset{\triangle}{=} \ \ \textcolor{orange}{\underline{\textbf{Feyer核}}}$$
