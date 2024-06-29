@@ -23,7 +23,7 @@
 >$$\quad \Downarrow \quad $$
 >$$于是: \qquad 我们需要\textcolor{orange}{\underline{\textbf{周期函数}}}的1个简单\textcolor{pink}{\underline{\textbf{性质}}}+ \textcolor{orange}{\underline{\textbf{三角函数系}}}的\textcolor{red}{\underline{\textbf{正交性}}}$$
 >$$\quad \Downarrow \quad $$
->$$我们先研究\qquad \textcolor{orange}{\underline{\textbf{周期函数}}}的\textcolor{pink}{\underline{\textbf{性质}}}+ \textcolor{orange}{\underline{\textbf{三角函数}}}的\textcolor{pink}{\underline{\textbf{定义}}}$$
+>$$我们先研究\qquad \textcolor{orange}{\underline{\textbf{周期函数}}}的\textcolor{pink}{\underline{\textbf{性质}}}+ \textcolor{orange}{\underline{\textbf{三角函数系}}}的\textcolor{pink}{\underline{\textbf{定义}}}$$
 # 一、三角级数与$Flourier$级数
 
 1. 命题1(  $\forall \ \alpha \quad \Rightarrow \quad \int^{\alpha+T}_{\alpha}f(x)dx=\int^{T}_{0}f(x)dx$  ) #数分下/第十四章/重要求解方法 
@@ -35,9 +35,9 @@
 		- $\{1\ , \ \cos x \ , \ \sin x \ , \  \cos 2x \ , \ \sin 2x \ , \ \cdots \ , \ \cos nx \ , \ \sin nx \ , \  \cdots\}$
 
 >[!error]- **衔接**
->$$研究好了\qquad \textcolor{orange}{\underline{\textbf{周期函数}}}的\textcolor{pink}{\underline{\textbf{性质}}}+ \textcolor{orange}{\underline{\textbf{三角函数}}}的\textcolor{pink}{\underline{\textbf{定义}}}$$
+>$$研究好了\qquad \textcolor{orange}{\underline{\textbf{周期函数}}}的\textcolor{pink}{\underline{\textbf{性质}}}+ \textcolor{orange}{\underline{\textbf{三角函数系}}}的\textcolor{pink}{\underline{\textbf{定义}}}$$
 >$$\quad \Downarrow \quad $$
->$$我们来研究\qquad \textcolor{orange}{\underline{\textbf{三角函数}}}的\textcolor{red}{\underline{\textbf{正交性}}}$$
+>$$我们来研究\qquad \textcolor{orange}{\underline{\textbf{三角函数系}}}的\textcolor{red}{\underline{\textbf{正交性}}}$$
 
 
 1. 定理14.1(  $\forall \ \textcolor{orange}{\underline{\textbf{三角函数系}}}上的两个\textcolor{orange}{\underline{\textbf{不同函数}}}的\textcolor{pink}{\underline{\textbf{乘积}}} \quad \Rightarrow \quad 区间[-\pi, \pi]上的\textcolor{orange}{\underline{\textbf{积分}}}=0$  )
@@ -92,45 +92,40 @@
 >$Qs:$
 >$$如何\textcolor{orange}{\underline{\textbf{添加条件}}}\quad S.t. \quad f(x)可以\textcolor{orange}{\underline{\textbf{展开}}}为对应的\textcolor{orange}{\underline{\textbf{Flourier级数}}}呢?$$
 >$$\quad \Downarrow \quad $$
->$$先给出\textcolor{pink}{\underline{\textbf{Flourier级数}}}的\textcolor{orange}{\underline{\textbf{部分和}}}S_{n}(x)$$
+>$$先给出 \qquad \textcolor{pink}{\underline{\textbf{Flourier级数}}}的\textcolor{orange}{\underline{\textbf{部分和}}}S_{n}(x)$$
 >$$\quad \Downarrow \quad $$
->$$再探究S_{n}(x)\textcolor{orange}{\underline{\textbf{什么时候}}}\textcolor{red}{\underline{\textbf{收敛}}}到f(x)?$$
+>$$再探究 \qquad S_{n}(x)\textcolor{orange}{\underline{\textbf{什么时候}}}\textcolor{red}{\underline{\textbf{收敛}}}到f(x)?$$
 
 1. 定义(  [[f(x)的Dirichlet积分]]  )
-	- $S_{n}(f;x)= \frac{1}{\pi} \int^{\pi}_{-\pi}f(u) \cdot \frac{\sin\left(n+ \frac{1}{2}\right) \cdot \frac{(u-x)}{2}}{\sin \frac{u-x}{2}}du$
-		- **小推论**
+	- $S_{n}(f;x)= \frac{1}{\pi} \int^{\pi}_{-\pi}f(u) \frac{\sin (n+ \frac{1}{2})(u-x)}{2 \sin \frac{u-x}{2}}du$ 
+		- **特别地**
 			- $if \quad f(x) \equiv 1 \quad \Rightarrow \quad 1= \frac{1}{\pi} \int^{\pi}_{-\pi} f(u) \frac{\sin (n+ \frac{1}{2})(u-x)}{2 \sin \frac{u-x}{2}}du$
 			- $if \quad f(x) \equiv 1 \quad \Rightarrow \quad 1= \frac{1}{\pi} \int^{\pi}_{-\pi} \frac{\sin (n+ \frac{1}{2})t}{2 \sin \frac{t}{2}}dt$
 			- $if \quad f(x) \equiv 1 \quad \Rightarrow \quad 1= \frac{1}{\pi} \int^{\pi}_{-\pi}D_{n}(t)dt$
 	1. 定义(  [[Dirichlet核]]  )
 		- $D_{n}(t)= \frac{\sin (n+ \frac{1}{2})t}{2 \sin \frac{t}{2}}$
-			- **小推论**
-				- $D_{n}(t)=D_{n}(-t)$
 
 >[!error]- **衔接**
->$Qs1:$
-> $$S_{n}(f;x)是否\textcolor{orange}{\underline{\textbf{逐点收敛}}}呢?$$
+> $$那么\qquad S_{n}(f;x)是否\textcolor{orange}{\underline{\textbf{逐点收敛}}}呢?$$
 > $$\quad \Updownarrow \quad$$
-> $$是否\exists \ x_{0} \in[-\pi \ , \ \pi] \ , \ \exists \ S \quad S.t. \quad  \lim\limits_{n \rightarrow \infty}S_{n}(f;x_{0}) - S=0成立呢?$$
+> $$\textcolor{pink}{\underline{\textbf{在什么条件下}}} \quad \Rightarrow \quad \exists \ S \quad S.t. \quad  \lim\limits_{n \rightarrow \infty}S_{n}(f;x) - S=0成立呢?$$
 > $$\quad \Downarrow \quad $$
-> $$利用\textcolor{pink}{\underline{\textbf{f(x)的Dirichlet积分}}}和\textcolor{pink}{\underline{\textbf{Dirichlet核}}}进行处理$$
+> $$计算$$
 > $$\quad \Downarrow \quad $$
-> $$S_{n}(f;x_{0})-S= \frac{1}{\pi} \int^{\pi}_{0}\varphi_{x_{0}}(t) \cdot D_{n}(t)dt$$
+> $$S_{n}(f;x_{0})-S= \frac{1}{\pi} \int^{\pi}_{0}\varphi_{x_{0}}(t) \frac{\sin (n+ \frac{1}{2})t}{2 \sin \frac{t}{2}}$$
 > $$\quad \Downarrow \quad $$
 > $$将积分划分为[0\ , \ \delta]和[\delta \ , \ \pi]$$
 > $$\quad \Downarrow \quad $$
-> $$为了处理[\delta \ , \ \pi]上的积分$$
-> $$\quad \Updownarrow \quad$$
-> $$让[0 \ , \ \delta ]上的积分为0$$
+> $$为了处理 \qquad [\delta \ , \ \pi]上的积分$$
 > $$\quad \Downarrow \quad $$
 > $$引理1(Riemann-Lebesgue引理)$$
 
 1. 引理1(  $if \quad g(t)在[a,b]上\textcolor{orange}{\underline{\textbf{绝对可积}}} \quad \Rightarrow \quad 2个结论$ )
 	 - $\textcolor{orange}{\underline{\textbf{Riemann}}}-\textcolor{orange}{\underline{\textbf{Lebesgue}}}引理$
 	- **解释**
-		- $只需:\qquad \textcolor{pink}{\underline{\textbf{找出}}}g(t)$
-		- $并且: \qquad 让g(t)\textcolor{pink}{\underline{\textbf{满足}}}\textcolor{orange}{\underline{\textbf{绝对可积}}}$
-		- $那么: \qquad 我们就可以专注于处理[\delta \ , \   \pi]上的积分了$
+		- $核心任务:\qquad \textcolor{pink}{\underline{\textbf{找出}}}g(t)$
+		- $核心任务: \qquad 让g(t)\textcolor{pink}{\underline{\textbf{满足}}}\textcolor{orange}{\underline{\textbf{绝对可积}}}$
+		- $那么: \qquad 我们就可以处理[\delta \ , \   \pi]上的积分了$
 	- **2个结论**
 		1. $\lim\limits_{p \rightarrow + \infty}\int^{b}_{a}g(t) \sin pt dt =0$
 		2. $\lim\limits_{p \rightarrow + \infty }\int^{b}_{a}g(t) \cos pt dt=0$
@@ -143,28 +138,16 @@
 			2. $\lim\limits_{n \rightarrow + \infty}b_{n}=0$
 		- **其中**
 			- $a_{n}、b_{n}是f(x)的\textcolor{orange}{\underline{\textbf{Flourier级数}}}的\textcolor{orange}{\underline{\textbf{系数}}}$
-
->[!error]- **衔接**
->$利用:$
->$$\textcolor{pink}{\underline{\textbf{引理1}}}$$
->$$\quad \Downarrow \quad $$
->$$\textcolor{pink}{\underline{\textbf{定理14.2}}}$$
->$$\quad \Updownarrow \quad$$
->$$\textcolor{orange}{\underline{\textbf{Riemann局部化}}}定理$$
-1. 定理14.2(  $2个条件\quad \Rightarrow \quad 1个结论$  )
+2. 定理14.2(  $2个条件\quad \Rightarrow \quad f(x)的\textcolor{orange}{\underline{\textbf{Flourier级数}}}在x_{0}的\textcolor{orange}{\underline{\textbf{收敛性}}} \ , \ \textcolor{orange}{\underline{\textbf{只与}}}f(x)在x_{0}\textcolor{orange}{\underline{\textbf{附近的性质}}}\textcolor{red}{\underline{\textbf{有关}}}$  )
 	- $\textcolor{orange}{\underline{\textbf{Riemann局部化}}}定理$
 	- **解释**
-		- $只需: \qquad f(x)以2 \pi为\textcolor{pink}{\underline{\textbf{周期}}}$
-		- $并且: \qquad f(x)在[-\pi \ , \ \pi]上\textcolor{orange}{\underline{\textbf{绝对可积}}}$
-		- $那么: \qquad 要研究S_{n}(f;x_{0})的\textcolor{orange}{\underline{\textbf{收敛性}}}$
+		- $只需: \qquad 满足2个条件$
+		- $那么: \qquad 要研究f(x)的 \textcolor{orange}{\underline{\textbf{Flourier级数}}}在x_{0}点处的\textcolor{orange}{\underline{\textbf{收敛性}}}$
 		- $只需:\qquad 研究f(x)在\mathring{U}(x_{0} \ , \ \delta)的性质即可$
 		- $也就是说:\qquad \textcolor{orange}{\underline{\textbf{无需}}}研究 \mathbb{R}\backslash \mathring{U}(x_{0},\delta)$
 	- **2个条件**
 		1. $f(x)以2 \pi 为\textcolor{pink}{\underline{\textbf{周期}}}$
 		2. $f(x)在[- \pi\ , \ \pi]上\textcolor{orange}{\underline{\textbf{绝对可积}}}$
-	- **1个结论**
-		1. $f(x)的\textcolor{orange}{\underline{\textbf{Flourier级数}}}在x_{0}的\textcolor{orange}{\underline{\textbf{收敛性}}} \ , \ \textcolor{orange}{\underline{\textbf{只与}}}f(x)在x_{0}\textcolor{orange}{\underline{\textbf{附近的性质}}}\textcolor{red}{\underline{\textbf{有关}}}$
-			- $S_{n}(f;x_{0})只与f(x)有关 \quad x \in\mathring{U}(x_{0},\delta)$
 	- **其中**
 		- $\delta>0 是\textcolor{orange}{\underline{\textbf{任意小}}}的\textcolor{orange}{\underline{\textbf{正数}}}$
 
@@ -174,153 +157,52 @@
 >$$\quad \Downarrow \quad $$
 >$$\textcolor{pink}{\underline{\textbf{定理14.3}}}$$
 
-1. [[定理14.3]](  $1个条件 \quad \Rightarrow \quad \lim\limits_{n \rightarrow + \infty}S_{n}(f;x_{0})=S$  )
+1. 定理14.3(  $1个条件 \quad \Rightarrow \quad \lim\limits_{n \rightarrow + \infty}S_{n}(f;x_{0})=S$  )
 	- $\textcolor{orange}{\underline{\textbf{Dini}}}判别法$
-	- **解释**
-		- $只需:\qquad 找到\delta>0 \quad S.t. \quad \int^{\delta}_{0} \frac{|\varphi_{x_{0}}(t)|}{t}dt \textcolor{orange}{\underline{\textbf{存在}}}$
-		- $那么:\qquad 就有\lim\limits_{n \rightarrow +\infty} S_{n}(f;x_{0})=S$
 	- **2个先决条件**
 		1. $f(x)以2 \pi 为\textcolor{pink}{\underline{\textbf{周期}}}$
 		2. $f(x)在[- \pi\ , \ \pi]上\textcolor{orange}{\underline{\textbf{绝对可积}}}$
 	- **1个条件**
 		1. $\exists \ \delta > 0 \quad S.t. \quad \int^{\delta}_{0} \frac{|\varphi_{x_{0}(t)|}}{t}dt \textcolor{orange}{\underline{\textbf{存在}}}$
-			- $\frac{\varphi_{x_{0}}(t)}{t}在[0 \ , \ \delta ]上 \textcolor{pink}{\underline{\textbf{绝对可积}}}$
 	- **其中**
 		- $\varphi_{x_{0}}(t)=f(x_{0}+t)+f(x_{0}-t)-2S$
 
-1. 定理14.4(  $1个条件\quad \Rightarrow \quad \lim\limits_{n \rightarrow +\infty}S_{n}(f;x_{0})= f(x_{0})$  )
-	- $\textcolor{orange}{\underline{\textbf{Lipschitz}}}判别法$
-	- **解释**
-		- $只需:\qquad 找到\delta >0$
-		- $再: \qquad 找到\textcolor{orange}{\underline{\textbf{常数}}}M \quad S.t. \quad |f(x_{0} \pm t)-f(x_{0}) \ | \  \leqslant M t^{\alpha} \quad 0  < t \ \leqslant \delta$
-		- $那么:\qquad \lim\limits_{n \rightarrow +\infty}S_{n}(f ; x_{0})=f(x_{0})$
+1. 定理14.4(  $1个条件\quad \Rightarrow \quad f(x)的\textcolor{orange}{\underline{\textbf{Flourier级数}}}在x_{0}\textcolor{orange}{\underline{\textbf{收敛}}}到f(x_{0})$  )
 	- **2个先决条件**
 		1. $f(x)以2 \pi为\textcolor{pink}{\underline{\textbf{周期}}}$
 		2. $f(x)在[-\pi,\pi]上\textcolor{orange}{\underline{\textbf{绝对可积}}}$
 	- **1个条件**
 		1. $f(x)在x_{0}点处满足\alpha(\alpha>0)阶的\textcolor{orange}{\underline{\textbf{Lipschitz}}}条件$
-			- $\exists \ \delta>0与\textcolor{orange}{\underline{\textbf{常数}}}M \quad S.t. \quad |f(x_{0}\pm t)-f(x_{0})|\ \leqslant Mt^{\alpha}\quad (0< t  \ \leqslant \delta)$
-	- **推论** #数分下/第十四章/重要推论
-		- $f(x)的\textcolor{orange}{\underline{\textbf{Flourier级数}}}在x_{0}点处\textcolor{orange}{\underline{\textbf{收敛}}}到f(x_{0})$
+			- $\exists \ \delta>0与\textcolor{orange}{\underline{\textbf{常数}}}M \quad S.t. \quad |f(x_{0}\pm t)-f(x_{0})|\leq Mt^{\alpha}\quad (0< t  \leq \delta)$
+	- **推论**
 		- **解释**
 			- $只需:\qquad 证明f^{'}_{+}(x_{0})、f^{'}_{-}(x_{0})\textcolor{orange}{\underline{\textbf{存在}}}$
-			- $那么: \qquad \lim\limits_{n \rightarrow +\infty}S_{n}(f;x_{0})=f(x_{0})$
-		- **2个先决条件**
-			1. $f(x)以2\pi 为\textcolor{pink}{\underline{\textbf{周期}}}$
-			2. $f(x)在[-\pi \ , \ \pi]上\textcolor{orange}{\underline{\textbf{绝对可积}}}$
+			- $那么: \qquad 就能知道f(x)的\textcolor{orange}{\underline{\textbf{Flourier级数}}}在x_{0}点处是否\textcolor{orange}{\underline{\textbf{收敛}}}到f(x_{0})$
 		- **1个条件**
 			1. $f^{'}_{+}(x_{0})、f^{'}_{-}(x_{0})\textcolor{orange}{\underline{\textbf{存在}}}$
+		- $f(x)的\textcolor{orange}{\underline{\textbf{Flourier级数}}}在x_{0}点处\textcolor{orange}{\underline{\textbf{收敛}}}到f(x_{0})$
 	- **小推论**
-		- **1个先决条件**
-			1. $x_{0}是\textcolor{pink}{\underline{\textbf{跳跃间断点}}}或\textcolor{pink}{\underline{\textbf{可去间断点}}}$
-		- **2个条件**
-			1. $\lim\limits_{t \rightarrow 0^{+}} \frac{f(x_{0}+t)-f(x_{0}+0)}{t}\textcolor{orange}{\underline{\textbf{存在}}}$
-				- $f^{'}_{+}(x_{0})\textcolor{orange}{\underline{\textbf{存在}}}$
-			2. $\lim\limits_{t \rightarrow 0^{+}} \frac{f(x_{0}-t)-f(x_{0}-0)}{-t}\textcolor{orange}{\underline{\textbf{存在}}}$
-				- $f^{'}_{-}(x_{0})\textcolor{orange}{\underline{\textbf{存在}}}$
-		- **3个结论**
-			1. $f(x_{0})改为f(x_{0}+0) \quad \Rightarrow \quad f(x)在x_{0}有\textcolor{orange}{\underline{\textbf{右微商}}}$
-			2. $f(x_{0})改为f(x_{0}-0) \quad \Rightarrow \quad f(x)在x_{0}有\textcolor{orange}{\underline{\textbf{左微商}}}$
-			3. $S_{n}(f;x_{0})\textcolor{orange}{\underline{\textbf{收敛}}}到 \frac{f(x_{0}+0) + f(x_{0}-0)}{2}$
-				- $\lim\limits_{n \rightarrow +\infty}S_{n}(f;x_{0}) =S =\frac{f(x_{0}+0) + f(x_{0}-0)}{2}$
 
 >[!error]- **衔接**
->$接下来:$
->$$我们引入f(x)在[a,b]上\textcolor{orange}{\underline{\textbf{逐段可微}}}的定义$$
+>$$接下来\qquad 我们引入\textcolor{orange}{\underline{\textbf{逐段可微}}}的概念$$
 
 
-1. 定义(  [[f(x)在闭区间上逐段可微]]  ) #数分下/第十四章/重要定义 
-	1. $\textcolor{pink}{\underline{\textbf{逐段开区间}}}\textcolor{orange}{\underline{\textbf{可导}}}$
-	2. $\textcolor{pink}{\underline{\textbf{端点}}}处\textcolor{pink}{\underline{\textbf{左右极限}}}\textcolor{orange}{\underline{\textbf{存在}}}$
+1. 定义(  [[f(x)在闭区间上逐段可微]]  )
 
 >[!error]- **衔接**
->$综合以上讨论:$
->$$我们得到$$
->$$\quad \Downarrow \quad $$
->$$\textcolor{pink}{\underline{\textbf{定理14.5}}}$$
+>$$综合以上讨论\qquad 我们得到$$
 
-1. 定理14.5(  $2个条件 \quad \Rightarrow \quad 2个结论$  ) #数分下/第十四章/重要定理
-	- $判断函数\textcolor{pink}{\underline{\textbf{可以展开}}}为\textcolor{orange}{\underline{\textbf{Flourier}}}级数的\textcolor{orange}{\underline{\textbf{充分条件}}}$
-		- $只需2个条件 \quad \Rightarrow \quad \textcolor{pink}{\underline{\textbf{可以展开}}}\cdots$
-	- **解释**
-		- $只需:\qquad 判断f(x)以 2 \pi 为\textcolor{pink}{\underline{\textbf{周期}}}$
-		- $并且:\qquad 判断f(x)在[-\pi \ , \ \pi]上\textcolor{orange}{\underline{\textbf{逐次可微}}} \quad (\textcolor{orange}{\underline{\textbf{本质}}})$
-		- $那么: \qquad f(x)可以展开为它的\textcolor{orange}{\underline{\textbf{Flourier级数}}}$
-		- **总结**
-			1. $判断f(x)在[-\pi \ , \ \pi]上是否\textcolor{orange}{\underline{\textbf{绝对可积}}}$
-			3. $求出f(x)对应的\textcolor{orange}{\underline{\textbf{Flourier级数}}}$
-			5. $补充f(x)在[-\pi, \pi]上\textcolor{orange}{\underline{\textbf{间断点}}}的定义$
-			6. $将f(x)展开为\textcolor{orange}{\underline{\textbf{Flourier级数}}}$
+1. 定理14.5(  $2个条件 \quad \Rightarrow \quad 2个结论$  )
 	- **2个条件**
 		1. $f(x)以2 \pi为\textcolor{pink}{\underline{\textbf{周期}}}$
 		2. $f(x)在[-\pi,\pi]上\textcolor{orange}{\underline{\textbf{逐段可微}}}$
 	- **2个结论**
 		1. $f(x)的\textcolor{orange}{\underline{\textbf{Flourier级数}}}在f(x)的\textcolor{orange}{\underline{\textbf{连续点}}}处\textcolor{orange}{\underline{\textbf{收敛}}}到f(x)$
-			- $S_{n}(f;x)在f(x)的\textcolor{pink}{\underline{\textbf{连续点}}}处\textcolor{orange}{\underline{\textbf{收敛}}}到f(x)$
 		2. $f(x)的\textcolor{orange}{\underline{\textbf{Flourier级数}}}在f(x)的\textcolor{orange}{\underline{\textbf{不连续点}}}处\textcolor{orange}{\underline{\textbf{收敛}}}到 \frac{f(x+0)+f(x-0)}{2}$
-			- $S_{n}(f;x)在f(x)的\textcolor{pink}{\underline{\textbf{不连续点}}}处\textcolor{orange}{\underline{\textbf{收敛}}}到 \frac{f(x+0)+f(x-0)}{2}$
 	- **其中**
 		- $\textcolor{orange}{\underline{\textbf{不连续点}}} \rightarrow \textcolor{pink}{\underline{\textbf{第一类间断点}}}/\textcolor{pink}{\underline{\textbf{可去间断点}}}$
 			- $\textcolor{pink}{\underline{\textbf{第一类间断点}}}:\quad \textcolor{orange}{\underline{\textbf{左右极限}}}\textcolor{pink}{\underline{\textbf{存在}}}但\textcolor{orange}{\underline{\textbf{不相等}}}$
 			- $\textcolor{pink}{\underline{\textbf{可去间断点}}}:\quad \textcolor{orange}{\underline{\textbf{左右极限}}}\textcolor{pink}{\underline{\textbf{存在}}}且\textcolor{orange}{\underline{\textbf{相等}}}$
-	- **小推论** #数分下/第十四章/重要推论 
-		1. $if \quad f(x)在x=-\pi \textcolor{orange}{\underline{\textbf{间断}}} \quad \Rightarrow \quad \lim\limits_{n \rightarrow +\infty}S_{n}(f;-\pi)=\frac{f(-\pi+0)+f(\pi-0)}{2}$
-		2. $if \quad f(x)在x=\pi \textcolor{orange}{\underline{\textbf{间断}}} \quad \Rightarrow \quad \lim\limits_{n \rightarrow +\infty}S_{n}(f;\pi)= \frac{f(-\pi+0)+f(\pi-0)}{2}$
-		3. $\frac{\pi^{2}}{6}=1+ \frac{1}{2^{2}} + \frac{1}{3^{2}} + \cdots \quad \Leftrightarrow \quad \frac{\pi^{2}}{6}=\sum\limits_{n=1}^{\infty} \frac{1}{n^{2}}$
-		4. $\frac{\pi^{2}}{12}=1- \frac{1}{2^{2}} + \frac{1}{3^{2}} - \cdots \quad \Leftrightarrow \quad \frac{\pi^{2}}{12}=\sum\limits_{n=1}^{\infty} \frac{(-1)^{n \pm1}}{n^{2}}$
-
->[!error]- **衔接**
->$$与\textcolor{orange}{\underline{\textbf{幂级数}}}相比$$
->$$\quad \Updownarrow \quad$$
->$$\textcolor{pink}{\underline{\textbf{展开区间}}}必须\textcolor{orange}{\underline{\textbf{无穷次可微}}}$$
->$$\quad \Downarrow \quad $$
->$$而对于\textcolor{orange}{\underline{\textbf{Flourier}}}级数$$
->$$\quad \Updownarrow \quad$$
->$$只需\textcolor{orange}{\underline{\textbf{逐段可微}}}$$
->$$\quad \Updownarrow \quad$$
->$$区间上\textcolor{orange}{\underline{\textbf{可微}}}+ \textcolor{pink}{\underline{\textbf{端点}}}\textcolor{orange}{\underline{\textbf{连续性修改}}}$$ 
->$$\quad \Downarrow \quad $$
->$$f(x)就能展开为\textcolor{orange}{\underline{\textbf{Flourier}}}级数$$
-
-
-1. 定理14.6(  $3个条件 \quad \Rightarrow \quad 2个结论$  ) #数分下/第十四章/重要定理 
-	- $\textcolor{orange}{\underline{\textbf{Flourier}}}\textcolor{red}{\underline{\textbf{逐项积分}}}定理$
-	- **解释**
-		- $只需:\qquad 说明f(x)以2 \pi为\textcolor{pink}{\underline{\textbf{周期}}}$
-		- $然后:\qquad 说明f(x)\in \mathbb{C} ([-\pi \ , \ \pi]] \backslash \textcolor{pink}{\underline{\textbf{第一类间断点}}})$
-		- $并且: \qquad 求出f(x)\textcolor{pink}{\underline{\textbf{对应的}}}\textcolor{orange}{\underline{\textbf{Flourier级数}}}$
-		- $那么:\qquad \int^{x}_{0}f(t)dt= \frac{a_{0}}{2}x + \sum\limits_{n=1}^{\infty} \frac{b_{n}}{n} + \sum\limits_{n=1}^{\infty} \frac{a_{n} \sin nx - b_{n} \cos nx}{n}$
-	- **3个条件**
-		1. $f(x)以2\pi为\textcolor{pink}{\underline{\textbf{周期}}}$
-		2. $f(x)在[-\pi \ , \ \pi] \backslash \textcolor{pink}{\underline{\textbf{第一类间断点}}}是\textcolor{orange}{\underline{\textbf{连续}}}的$
-		3. $f(x) \sim  \frac{a_0}{2} + \sum\limits_{n=1}^{\infty} (a_{n} \cos nx + b_{n} \sin nx)$
-	- **2个结论**
-		1. $\sum\limits_{n=1}^{\infty} \frac{b_{n}}{n} \textcolor{orange}{\underline{\textbf{收敛}}}$
-		2. $\int^{x}_{0}f(t)dt- \frac{a_{0}}{2}x = \sum\limits_{n=1}^{\infty} \frac{b_{n}}{n}+ \sum\limits_{n=1}^{\infty} \frac{a_{n} \sin nx - b_{n} \cos nx}{n} \quad \forall \ x \in [-\pi \ , \ \pi]$
-3. 定理14.7(  $2个条件 \quad \Rightarrow \quad \lim\limits_{n \rightarrow \infty}\sigma_{n}(x) \rightrightarrows f(x) \quad  \forall \ x \in [-\pi \ , \ \pi]$  )
-	- $\textcolor{orange}{\underline{\textbf{Feyer}}}定理$
-	- **2个条件**
-		1. $f(x)以2 \pi为\textcolor{pink}{\underline{\textbf{周期}}}$
-		2. $f(x) \in \mathbb{C}[-\pi \ , \ \pi]$
-	- **其中**
-		- $f(x) \sim  \frac{a_0}{2} + \sum\limits_{n=1}^{\infty} (a_{n} \cos nx + b_{n} \sin nx)$
-		- $S_{n}(x) =  \frac{a_0}{2} + \sum\limits_{k=1}^{n} (a_{k} \cos kx + b_{k} \sin kx) \quad n \in \mathbb{N}_{+}$
-		- $S_{0}(x) = \frac{a_{0}}{2}$
-		- $\sigma(x)= \frac{1}{n+1} \cdot \sum\limits_{k=0}^{n}S_{k}(x)$
-	- **小推论**
-		- **4个条件**
-			1. $f(x)以2\pi为\textcolor{pink}{\underline{\textbf{周期}}}$
-			2. $f(x)在[-\pi \ , \ \pi]上\textcolor{orange}{\underline{\textbf{有界}}}$
-			3. $f(x)在[-\pi \ , \ \pi]上\textcolor{orange}{\underline{\textbf{可积}}}$
-			4. $f(x)在x_{0}点\textcolor{orange}{\underline{\textbf{连续}}}$
-		- **1个结论**
-			1. $\lim\limits_{n \rightarrow \infty } \sigma_{n}(x_{0})= f(x_{0})$
-		- 定义(  [[Feyer核]]  )
-			- $K_{n}(t) = \frac{1}{(n+1)} \cdot \sum\limits_{k=0}^{\infty} \frac{\sin\left(k+ \frac{1}{2}\right)t}{2\sin \frac{t}{2}}$
-			- $Feyer核$的**性质**
-				1. $K_{n}(t)= \frac{1}{2(n+1)} \left(\frac{\sin \left(n+ \frac{1}{2}\right)t }{2\sin \frac{t}{2}}\right)^{2}  \geqslant 0$
-				2. $\frac{1}{\pi} \int^{\pi}_{-\pi}K_{n}(t)dt =1$
-				3. $\lim\limits_{n \rightarrow +\infty} \int^{}_{\delta  \leqslant |t|  \leqslant \pi}K_{n}(t)dt =0 \quad \forall \ \delta > 0$
 # 三、任意区间上的$Flourier$级数
 
 1. 定义(  [[周期为2l的函数f(x)的Flourier级数]]  )
@@ -482,7 +364,7 @@
 	- **1个结论**
 		1. $S_{n}(x)在[-\pi,\pi]上\textcolor{orange}{\underline{\textbf{平均收敛}}}到f(x)$
 			- $\lim\limits_{n \rightarrow \infty}(\frac{1}{2\pi}\int^{\pi}_{-\pi}|f(x)-S_{n}(x)|^{2}dx)^{\frac{1}{2}}=0$
-	- **推论** #数分下/第十四章/重要推论 
+	- **推论** #数分下/第十四章/重要推论
 		- $\frac{a_{0}^{2}}{2}+\sum\limits_{k=1}^{\infty}(a^{2}_{k}+b^{2}_{k})=\frac{1}{\pi}\int^{\pi}_{-\pi}|f(x)|^{2}dx$
 			- $Paseval等式$
 	- **小推论**
