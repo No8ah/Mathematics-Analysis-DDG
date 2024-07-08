@@ -225,7 +225,7 @@
 				- $\cos nx \rightarrow cos \frac{n \pi}{l}x$
 	1. 定义(  [[奇延拓]]  ) #数分下/第十四章/重要定义 
 		- $F_{e}(x) \ \ \sim \ \ \sum\limits_{n=1}^{\infty}b_{n}  \sin \frac{n\pi}{l}x$
-			- $\textcolor{orange}{\underline{\textbf{特别地}}}\ , \ 如果f在[0,l]上\textcolor{orange}{\underline{\textbf{逐段可微}}}\quad \Rightarrow \quad F_{e}(x)=\sum\limits_{n=1}^{\infty}b_{n}cos \frac{n\pi}{l}x$ #数分下/第十四章/注意点 
+			- $\textcolor{orange}{\underline{\textbf{特别地}}}\ , \ 如果f在[0,l]上\textcolor{orange}{\underline{\textbf{逐段可微}}}\quad \Rightarrow \quad F_{e}(x)=\sum\limits_{n=1}^{\infty}b_{n}\sin\frac{n\pi}{l}x$ #数分下/第十四章/注意点 
 			- $b_{n}=\frac{1}{l}\int^{l}_{-l}f(x) \sin \frac{n \pi}{l}xdx \quad n=1\ , \ 2\ , \ 3\ , \ \cdots$ #数分下/第十四章/注意点 
 				- $\frac{1}{\pi} \rightarrow \frac{1}{l}$
 				- $\int^{\pi}_{-\pi} \rightarrow \int^{l}_{-l}$
@@ -316,12 +316,12 @@
 >$$\quad \Downarrow \quad $$
 >$$\textcolor{pink}{\underline{\textbf{定理14.9}}}(Bessel不等式)$$
 1. 定理14.9(  $2个条件\quad \Rightarrow \quad f(x)的Flourier系数a_{k}\ , \ b_{k}满足结论$  )
+	- $\textcolor{orange}{\underline{\textbf{Bessel}}}不等式$
 	- **2个条件**
 		1. $f(x)以2\pi为\textcolor{pink}{\underline{\textbf{周期}}}$
 		2. $f(x)在[-\pi,\pi]上\textcolor{orange}{\underline{\textbf{平方可积}}}$
 	- **结论**
 		- $\frac{a_{0}^{2}}{2}+\sum\limits_{k=1}^{\infty}(a^{2}_{k}+b^{2}_{k}) \leq \frac{1}{\pi}\int^{\pi}_{-\pi}|f(x)|^{2}dx$
-	- $Bessel不等式$
 
 > [!error]- **衔接**
 > $$利用上述所有定理$$
